@@ -134,24 +134,15 @@
       $( '#inputName' ).addClass( 'is-invalid' );
       may_send = 0
     }
-    else {
-      $( '#inputName' ).removeClass( 'is-invalid' );
-    }
 
     if ( !/^[А-Яа-яЁёA-Za-z0-9\s.,]+$/iu.test( $( '#inputBio' ).val() ) || $( '#inputBio' )[0].length < 5 || $( '#inputBio' )[0].length > 2000 ) {
       $( '#inputBio' ).addClass( 'is-invalid' );
       may_send = 0
     }
-    else {
-      $( '#inputBio' ).removeClass( 'is-invalid' );
-    }
 
     if ( !/^\d{4}-\d{2}-\d{2}$/.test( $( '#inputDate' ).val() ) ) {
       $( '#inputDate' ).addClass( 'is-invalid' );
       may_send = 0
-    }
-    else {
-      $( '#inputDate' ).removeClass( 'is-invalid' );
     }
 
 
@@ -162,9 +153,6 @@
         if ( $( '#inputPhoto' )[0].files.length === 0 ) {
           $( '#inputPhoto' ).addClass( 'is-invalid' );
           may_send = 0
-        }
-        else {
-          $( '#inputPhoto' ).removeClass( 'is-invalid' );
         }
 
       }

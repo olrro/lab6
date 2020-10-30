@@ -152,24 +152,15 @@
       $( '#inputName' ).addClass( 'is-invalid' );
       may_send = 0
     }
-    else {
-      $( '#inputName' ).removeClass( 'is-invalid' );
-    }
 
     if ( !/^\d{4}-\d{2}-\d{2}$/.test( $( '#inputDate' ).val() ) ) {
       $( '#inputDate' ).addClass( 'is-invalid' );
       may_send = 0
     }
-    else {
-      $( '#inputDate' ).removeClass( 'is-invalid' );
-    }
 
     if ( parseInt( $( '#inputID' ).val() ) > 10000 || parseInt( $( '#inputID' ).val() ) < 1  ) {
       $( '#inputID' ).addClass( 'is-invalid' );
       may_send = 0
-    }
-    else {
-      $( '#inputID' ).removeClass( 'is-invalid' );
     }
 
     if ( $('#photoBan').length ) {
@@ -179,9 +170,6 @@
         if ( $( '#inputPhoto' )[0].files.length === 0 ) {
           $( '#inputPhoto' ).addClass( 'is-invalid' );
           may_send = 0
-        }
-        else {
-          $( '#inputPhoto' ).removeClass( 'is-invalid' );
         }
 
       }

@@ -24,9 +24,9 @@ CREATE TABLE `students` (
 --
 
 INSERT INTO `students` (`id`, `teacher_id`, `name`, `birthday`, `gender`, `photo`) VALUES
-(1, 42, 'Влад Лукаш', '1995-03-03', 1, '43fa7dca255ff8f70faa945b0fc32514.jpg'),
-(2, 42, 'Елизавета Авета', '1995-03-03', 0, '2a4787fd092f417ff6117ae07c8d3439.jpg'),
-(3, 45, 'Миша Таксист', '2004-12-29', 1, 'e98090ba037d09b5904cdf9b3c3ae68c.jpg');
+(1, 1, 'Влад Лукаш', '1995-03-03', 1, '43fa7dca255ff8f70faa945b0fc32514.jpg'),
+(2, 1, 'Елизавета Авета', '1995-03-03', 0, '2a4787fd092f417ff6117ae07c8d3439.jpg'),
+(3, 2, 'Миша Таксист', '2004-12-29', 1, 'e98090ba037d09b5904cdf9b3c3ae68c.jpg');
 
 -- --------------------------------------------------------
 
@@ -123,10 +123,6 @@ ALTER TABLE `teachers`
 --
 ALTER TABLE `users`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
---
--- Constraints for dumped tables
---
 
 --
 -- Constraints for table `students`
